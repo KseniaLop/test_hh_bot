@@ -57,7 +57,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        TelegramBot bot = new TelegramBot("6421224135:AAGrFivG5l9Lkgre9lOKvMqLTRLq-HcI_KU");
+        TelegramBot bot = new TelegramBot(System.getenv("BOT_TOKEN"));
         bot.setUpdatesListener(e  -> {
             System.out.println(e);
             e.forEach(it -> {
